@@ -1,10 +1,13 @@
 # 課題の回答は このファイル をご利用下さい。
 # 回答の出力を確認される際は，「php task.php」をターミナルから実行して下さい。
-
+<?php
 print("#####q1#####".PHP_EOL);
 $names = ["田中", "佐藤", "佐々木", "高橋"];
 
   # 以下に回答を記載
+
+array_push($names,"斎藤");
+print_r($names);
 
 echo PHP_EOL;
 
