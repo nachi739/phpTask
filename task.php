@@ -42,15 +42,31 @@ $sports = ["サッカー", "フットサル", null, "野球", "バスケ", null,
 $diff = array_diff($sports,[null]);
 print_r($diff);
 echo PHP_EOL;
-?>
+
 print("#####q5#####".PHP_EOL);
 $array1 = [];
 $array2 = [1, 5, 8, 10];
 
   # 以下に回答を記載
-
+if (empty($array1)){
+  echo "true";
+}else {
+  echo "false";
+}
+echo PHP_EOL;
+if(empty($array2)){
+  echo "true";
+}else {
+  echo "false";
+}
 echo PHP_EOL;
 
+var_export(empty($array1));
+echo PHP_EOL;
+var_export(empty($array2));
+echo PHP_EOL;
+
+?>
 print("#####q6#####".PHP_EOL);
 $numbers1 = [1, 2, 3, 4, 5];
 
