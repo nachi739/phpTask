@@ -34,14 +34,15 @@ foreach($numbers as $number) {
 }
 print_r($count3);
 echo PHP_EOL;
-?>
+
 print("#####q4#####".PHP_EOL);
 $sports = ["サッカー", "フットサル", null, "野球", "バスケ", null, "バレー"];
 
   # 以下に回答を記載
-
+$diff = array_diff($sports,[null]);
+print_r($diff);
 echo PHP_EOL;
-
+?>
 print("#####q5#####".PHP_EOL);
 $array1 = [];
 $array2 = [1, 5, 8, 10];
