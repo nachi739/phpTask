@@ -23,9 +23,18 @@ print("#####q3#####".PHP_EOL);
 $numbers = [1, 5, 8, 10, 2, 3, 2, 3, 1, 4, 5, 9];
 
   # 以下に回答を記載
+$output = array_count_values($numbers);
+print_r($output);
 
+$count3 = 0;
+foreach($numbers as $number) {
+  if($number === 3){
+    $count3++;
+  }
+}
+print_r($count3);
 echo PHP_EOL;
-
+?>
 print("#####q4#####".PHP_EOL);
 $sports = ["サッカー", "フットサル", null, "野球", "バスケ", null, "バレー"];
 
