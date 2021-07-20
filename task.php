@@ -79,17 +79,17 @@ foreach ($numbers1 as $number) {
 }
 print_r($numbers2);
 echo PHP_EOL;
-?>
+
 print("#####q7#####".PHP_EOL);
 $array = ["1", "2", "3", "4", "5"];
 
   # 以下に回答を記載
-
+$array = array_map('intval',$array);
   # 以下は変更しないで下さい
 var_dump($array);
 
 echo PHP_EOL;
-
+?>
 print("#####q8#####".PHP_EOL);
 $programming_languages = ["php", "ruby", "python", "javascript"];
 
