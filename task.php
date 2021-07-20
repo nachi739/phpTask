@@ -102,14 +102,20 @@ echo PHP_EOL;
 print_r($upper_case_programming_languages);
 
 echo PHP_EOL;
-?>
+
 print("#####q9#####".PHP_EOL);
 $names = ["田中", "佐藤", "佐々木", "高橋"];
 
   # 以下に回答を記載
-
+$member_names = [];
+foreach($names as $key => $name){
+  $number = $key + 1;
+  $member = "会員No.".$number." ".$name;
+  array_push($member_names,$member);
+}
+print_r($member_names);
 echo PHP_EOL;
-
+?>
 print("#####q10#####".PHP_EOL);
 $foods = ["いか", "たこ", "うに", "しゃけ", "うにぎり", "うに軍艦", "うに丼", "高級なうに"];
 
