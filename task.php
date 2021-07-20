@@ -89,19 +89,20 @@ $array = array_map('intval',$array);
 var_dump($array);
 
 echo PHP_EOL;
-?>
+
 print("#####q8#####".PHP_EOL);
 $programming_languages = ["php", "ruby", "python", "javascript"];
 
   # 以下に回答を記載
-
+$programming_languages = array_map('ucfirst',$programming_languages);
+$upper_case_programming_languages = array_map('strtoupper',$programming_languages);
   # 以下は変更しないで下さい
 print_r($programming_languages);
 echo PHP_EOL;
 print_r($upper_case_programming_languages);
 
 echo PHP_EOL;
-
+?>
 print("#####q9#####".PHP_EOL);
 $names = ["田中", "佐藤", "佐々木", "高橋"];
 
