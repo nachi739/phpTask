@@ -23,8 +23,8 @@ print("#####q3#####".PHP_EOL);
 $numbers = [1, 5, 8, 10, 2, 3, 2, 3, 1, 4, 5, 9];
 
   # 以下に回答を記載
-$output = array_count_values($numbers);
-print_r($output);
+#$output = array_count_values($numbers);
+#print_r($output);
 
 $count3 = 0;
 foreach($numbers as $number) {
@@ -66,14 +66,20 @@ echo PHP_EOL;
 var_export(empty($array2));
 echo PHP_EOL;
 
-?>
+
 print("#####q6#####".PHP_EOL);
 $numbers1 = [1, 2, 3, 4, 5];
 
   # 以下に回答を記載
+$numbers2 = [];
 
+foreach ($numbers1 as $number) {
+  $number *= 10;
+  array_push($numbers2,$number);
+}
+print_r($numbers2);
 echo PHP_EOL;
-
+?>
 print("#####q7#####".PHP_EOL);
 $array = ["1", "2", "3", "4", "5"];
 
