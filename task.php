@@ -175,15 +175,16 @@ $data = ["user" => ["name" => "satou", "age" => 33]];
   # 以下に回答を記載
 print_r($data["user"]["name"]);
 echo PHP_EOL;
-?>
+
 print("#####q13#####".PHP_EOL);
 $user_data = ["name" => "神里", "age" => 31, "address" => "埼玉"];
 $update_data = ["age" => 32, "address" => "沖縄"];
 
   # 以下に回答を記載
-
+$user_data = array_replace($user_data, $update_data);
+print_r($user_data);
 echo PHP_EOL;
-
+?>
 print("#####q14#####".PHP_EOL);
 $data = ["name" => "satou", "age" => 33, "address" => "saitama", "hobby" => "soccer", "email" => "hoge@fuga.com"];
 
