@@ -196,15 +196,28 @@ foreach($data as $int_data){
 }
 print_r($new_data);
 echo PHP_EOL;
-?>
+
 print("#####q15#####".PHP_EOL);
 $data1 = ["name" => "saitou", "hobby" => "soccer", "age" => 33, "role" => "admin"];
 $data2 = ["name" => "yamada", "hobby" => "baseball", "role" => "normal"];
 
   # 以下に回答を記載
+//-------$data1 OK or NG --------------
+if(array_key_exists('age', $data1)) {
+  echo('OK'.PHP_EOL);
+}else {
+  echo('NG'.PHP_EOL);
+}
+
+//-------$data2 OK or NG --------------
+if (array_key_exists('age', $data2)) {
+  echo('OK'.PHP_EOL);
+}else {
+  echo('NG'.PHP_EOL);
+}
 
 echo PHP_EOL;
-
+?>
 print("#####q16#####".PHP_EOL);
 $users = [
   ["name" => "satou", "age" => 22],
