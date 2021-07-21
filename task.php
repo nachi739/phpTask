@@ -184,14 +184,19 @@ $update_data = ["age" => 32, "address" => "沖縄"];
 $user_data = array_replace($user_data, $update_data);
 print_r($user_data);
 echo PHP_EOL;
-?>
+
 print("#####q14#####".PHP_EOL);
 $data = ["name" => "satou", "age" => 33, "address" => "saitama", "hobby" => "soccer", "email" => "hoge@fuga.com"];
 
   # 以下に回答を記載
-
+  #print_r($data);
+$new_data = [];
+foreach($data as $int_data){
+  array_push($new_data, $int_data);
+}
+print_r($new_data);
 echo PHP_EOL;
-
+?>
 print("#####q15#####".PHP_EOL);
 $data1 = ["name" => "saitou", "hobby" => "soccer", "age" => 33, "role" => "admin"];
 $data2 = ["name" => "yamada", "hobby" => "baseball", "role" => "normal"];
