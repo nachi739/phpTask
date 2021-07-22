@@ -232,13 +232,27 @@ foreach ($users as $key => $user) {
   echo PHP_EOL;
 }
 echo PHP_EOL;
-?>
+
 print("#####q17#####".PHP_EOL);
 class User
 {
 
   # コードを追加
-
+  protected $name;
+  protected $age;
+  protected $gender;
+//初期化
+  function __construct($user_name, $user_age, $user_gender) {
+    $this->name = $user_name;
+    $this->age = $user_age;
+    $this->gender = $user_gender;
+  }
+//出力レイアウト
+  function info() {
+    print("名前：".$this->name.PHP_EOL);
+    print("年齢：".$this->age.PHP_EOL);
+    print("性別；".$this->gender.PHP_EOL);
+  }
 }
 
 $user1 = new User("神里", 32, "男");
@@ -249,7 +263,7 @@ print("-------------".PHP_EOL);
 $user2->info();
 
 echo PHP_EOL;
-
+?>
 print("#####q18#####".PHP_EOL);
 
   # コードを追加
