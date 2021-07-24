@@ -280,10 +280,8 @@ class Man
   function introduce() {
     if($this->age >= 20) {
       print("こんにちは、".$this->name."と申します。宜しくお願いいたします。".PHP_EOL);
-    }elseif ($this->age <= 20) {
-      print("はいさいまいど〰".$this->name."です！！！".PHP_EOL);
     }else {
-      print("対象外です");
+      print("はいさいまいど〰".$this->name."です！！！".PHP_EOL);
     }
   }
 }
