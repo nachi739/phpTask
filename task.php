@@ -309,19 +309,43 @@ $book = new Item("ゼロ秒思考");
 print($book->name.PHP_EOL);
 
 echo PHP_EOL;
-?>
+
 print("#####q20#####".PHP_EOL);
 class Human
 {
 
-  # コードを追加
+    public $name;
+    public $age;
 
+    function __construct($user_name, $user_age) {
+        $this->name = $user_name;
+        $this->age = $user_age;
+    }
 }
 
 class Zoo
 {
 
-  # コードを追加
+    protected $name;
+    protected $entry_fee;
+
+    function __construct($zoo_name, $zoo_entry_fee) {
+        $this->name = $zoo_name;
+        $this->entry_fee = $zoo_entry_fee;
+    }
+
+    function info_entry_fee(Human $human) {
+        if ($human->age <= 5) {
+            print($human->name."さんの入場料金は".$this->entry_fee["infant"]."円です。".PHP_EOL);
+        }elseif ($human->age <= 12) {
+            print($human->name."さんの入場料金は".$this->entry_fee["children"]."円です。".PHP_EOL);
+        }elseif ($human->age <= 64) {
+            print($human->name."さんの入場料金は".$this->entry_fee["adult"]."円です。".PHP_EOL);
+        }elseif ($human->age <= 120) {
+            print($human->name."さんの入場料金は".$this->entry_fee["senior"]."円です。".PHP_EOL);
+        }
+    }
+
 
 }
 
@@ -339,3 +363,4 @@ foreach($humans as $human){
 }
 
 echo PHP_EOL;
+?>
