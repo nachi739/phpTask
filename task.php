@@ -363,4 +363,9 @@ foreach($humans as $human){
 }
 
 echo PHP_EOL;
+
+print("#####q21#####".PHP_EOL);
+error_reporting(0);
+while($i++<30)echo[Fizz][$i%3].[Buzz][$i%5].[Hoge][$i%7]?:$i," ".PHP_EOL;
+
 ?>
