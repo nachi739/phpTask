@@ -297,7 +297,7 @@ print("#####q19#####".PHP_EOL);
 class Item{
   # 以下を修正して下さい
 
-  protected $book;
+  #protected $book;
 
   function __construct($book_name){
     $this->name= $book_name;
@@ -365,7 +365,26 @@ foreach($humans as $human){
 echo PHP_EOL;
 
 print("#####q21#####".PHP_EOL);
-error_reporting(0);
-while($i++<30)echo[Fizz][$i%3].[Buzz][$i%5].[Hoge][$i%7]?:$i," ".PHP_EOL;
+/*error_reporting(0);
+while($i++<30)echo[Fizz][$i%3].[Buzz][$i%5].[Hoge][$i%7]?:$i.PHP_EOL;
+*/
+
+for ($i = 1; $i <= 30; $i++) {
+    if($i % 21 === 0) {
+        echo 'FizzHoge';
+    }elseif ($i % 15 === 0) {
+        echo 'FizzBuzz';
+    }elseif ($i % 7 === 0) {
+        echo 'Hoge';
+    }elseif ($i % 5 === 0) {
+        echo 'Buzz';
+    }elseif ($i % 3 === 0) {
+        echo 'Fizz';
+    }else {
+        echo $i;
+    }
+
+    echo PHP_EOL;
+}
 
 ?>
