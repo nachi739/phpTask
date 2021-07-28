@@ -298,6 +298,7 @@ class Item{
   # 以下を修正して下さい
 
   #protected $book;
+  public $name;
 
   function __construct($book_name){
     $this->name= $book_name;
@@ -370,7 +371,11 @@ while($i++<30)echo[Fizz][$i%3].[Buzz][$i%5].[Hoge][$i%7]?:$i.PHP_EOL;
 */
 
 for ($i = 1; $i <= 30; $i++) {
-    if($i % 21 === 0) {
+    if($i % 105 === 0){
+        echo 'FizzBuzzHoge';
+    }elseif($i % 35 === 0){
+        echo 'BizzHoge';
+    }elseif($i % 21 === 0) {
         echo 'FizzHoge';
     }elseif ($i % 15 === 0) {
         echo 'FizzBuzz';
